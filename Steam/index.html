@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valve Games</title>
+</head>
+<body>
+
+    <header>
+        <h1>Valve Games</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Valve Games</h2>
+        <p>Explore the amazing world of games developed by Valve.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Valve</h2>
+        <p>Valve Corporation is a video game developer and digital distribution company known for its critically acclaimed game titles.</p>
+    </section>
+
+    <!-- ... (Code précédent) -->
+
+<section id="games">
+    <h2>Popular Games</h2>
+    <div id="gameList"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries, please email us at <a href="mailto:info@valvegames.com">info@valvegames.com</a></p>
+</section>
+
+<!-- Ajout d'une section pour chaque jeu -->
+<section class="game-details" id="halfLife">
+    <h3>Half-Life</h3>
+    <p>Half-Life is a revolutionary first-person shooter game...</p>
+    <button onclick="showGameDetails('halfLife')">Show Details</button>
+    <img src="half_life_image.jpg" alt="Half-Life Image">
+</section>
+
+<section class="game-details" id="portal">
+    <h3>Portal</h3>
+    <p>Portal is a mind-bending puzzle-platformer...</p>
+    <button onclick="showGameDetails('portal')">Show Details</button>
+    <img src="portal_image.jpg" alt="Portal Image">
+</section>
+
+<!-- ... (Code suivant) -->
+
+
+<!-- ... (Code suivant) -->
+
+    <script src="script.js"></script>
+</body>
+</html>

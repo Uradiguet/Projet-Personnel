@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea of Thieves Fan Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header, nav, section, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: left;
+                margin: 5px 0;
+            }
+        }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: block;
+    }
+
+
+/* Styles inchangés */
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ... (styles inchangés) */
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sea of Thieves Fan Site</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle">&#9776; Menu</button>
+        <div class="nav-links">
+            <a href="#">Accueil</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="guides.html">Guides</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Bienvenue sur le site dédié à Sea of Thieves</h2>
+        <p>Découvrez les dernières actualités, consultez nos guides utiles et explorez notre galerie d'images captivantes.</p>
+    </section>
+
+    <section>
+        <h2>Actualités</h2>
+        <article>
+            <h3>Nouvelle Mise à Jour - Titre</h3>
+            <p>La dernière mise à jour de Sea of Thieves introduit de nouveaux contenus excitants...</p>
+            <a href="actualite-detail.html">Lire la suite</a>
+        </article>
+        <article>
+            <h3>Événement Spécial - Titre</h3>
+            <p>Participez à l'événement spécial en jeu pour gagner des récompenses exclusives...</p>
+            <a href="actualite-detail.html">Lire la suite</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Guides</h2>
+        <article>
+            <h3>Guide du Nouveau Joueur</h3>
+            <p>Découvrez les bases du jeu et commencez votre aventure de pirate...</p>
+            <a href="guide-detail.html">Lire le guide</a>
+        </article>
+        <article>
+            <h3>Stratégies pour les Voyages</h3>
+            <p>Améliorez vos compétences en suivant nos conseils pour des voyages réussis...</p>
+            <a href="guide-detail.html">Lire le guide</a>
+        </article>
+    </section>
+
+    
+<section id="galerie">
+    <h2>Galerie d'Images</h2>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <!-- Ajoutez autant de diapositives que nécessaire -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+
+<!-- ... (code inchangé) -->
+
+<script>
+    // Script pour le diaporama
+    let slideIndex = 1;
+
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        showSlides(slideIndex);
+    });
+</script>
+
+
+    <section>
+        <h2>Contact</h2>
+        <p>N'hésitez pas à nous contacter pour toute question ou suggestion.</p>
+        <p>Email: contact@seaofthievesfansite.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sea of Thieves Fan Site. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+</html>
