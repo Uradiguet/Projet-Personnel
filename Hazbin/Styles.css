@@ -1,0 +1,41 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#character-list {
+    margin: 20px;
+}
+
+#character-list > div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+#pagination a.active {
+    font-weight: bold;
+}
