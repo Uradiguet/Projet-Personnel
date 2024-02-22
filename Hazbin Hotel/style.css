@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001233;
+    color: #FF595A;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF595A;
+    color: #001233;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FF595A;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #FF595A;
+    color: #001233;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #FF595A;
+    color: #001233;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Modification du positionnement */
+    width: 100%;
+}
+
+
+
+.personnage {
+    margin-bottom: 20px;
+    border: 2px solid #FF595A;
+    padding: 10px;
+}
+.personnage h3 {
+    color: #FF595A;
+}
+
+.personnage a {
+    color: #FF595A; /* Couleur principale */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    transition: color 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.personnage a:hover {
+    color: #FF8C8E; /* Couleur au survol */
+}
+
+
+.lieu {
+    margin-bottom: 20px;
+    border: 2px solid #FF595A;
+    padding: 10px;
+}
+.lieu h3 {
+    color: #FF595A;
+}
