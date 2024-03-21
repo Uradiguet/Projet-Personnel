@@ -79,3 +79,211 @@ footer {
 .lieu h3 {
     color: #FF595A;
 }
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.personnage img,
+.lieu img,
+.produit img {
+    max-width: 30%; /* Ajuster la largeur maximale des images pour qu'elles s'adaptent au conteneur */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    margin-top: 10px; /* Espacement supplémentaire en haut de chaque image */
+}
+
+.produit {
+    border: 2px solid #FF595A; /* Bordure solide de 2 pixels avec couleur rouge */
+    padding: 10px; /* Espacement interne pour le contenu */
+    margin-bottom: 20px; /* Espacement en bas pour séparer les produits */
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Style pour l'effet d'overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Assurez-vous que l'overlay soit au-dessus de tout le reste */
+}
+
+.enlarged-img {
+    max-width: 90%; /* Ajustez la taille maximale de l'image agrandie */
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Ombre pour l'effet de profondeur */
+}
+
+/* Style pour les formulaires */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px; /* Hauteur fixe pour la zone de texte */
+}
+
+input[type="submit"] {
+    background-color: #FF595A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF8C8E;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #FF595A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF8C8E;
+}
+
+
+.dark-mode {
+    background-color: #001233;
+    color: #FF595A;
+}
+
+/* CSS pour masquer les éléments non pertinents lors de la recherche */
+.personnage, .lieu {
+    display: block;
+}
+
+.personnage.principal {
+    border-color: #FF595A; /* Personnages principaux en rouge */
+}
+
+.personnage.secondaire {
+    border-color: #FF8C8E; /* Personnages secondaires en rose */
+}
+
+/* CSS pour les boutons de tri et de filtrage */
+#sort-button, #filter-select {
+    margin: 10px;
+    padding: 5px;
+    background-color: #FF595A;
+    color: #001233;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sort-button:hover, #filter-select:hover {
+    background-color: #FF8C8E;
+}
+
+.commentaires {
+    margin-top: 20px;
+}
+
+.commentaire {
+    border: 1px solid #FF595A;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.commentaire h3 {
+    color: #FF595A;
+}
+
+/* CSS pour les boutons de partage */
+.share-buttons {
+    margin-top: 20px;
+}
+
+.share-button {
+    background-color: #FF595A;
+    color: #001233;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.share-button:hover {
+    background-color: #FF8C8E;
+}
+
+#commentaires, #biographies, #faq, #contact, #reseaux-sociaux {
+    padding: 20px;
+}
+
+#biographies, #faq, #contact, #reseaux-sociaux {
+    background-color: #001233;
+}
+
+#biographies h3, #faq h3, #contact h2, #reseaux-sociaux h2 {
+    color: #FF595A;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#contact-form button {
+    background-color: #FF595A;
+    color: #001233;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #FF8C8E;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseaux-sociaux a {
+    margin: 0 10px;
+}

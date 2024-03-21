@@ -14,28 +14,161 @@
         <ul>
             <li><a href="#personnages">Personnages</a></li>
             <li><a href="#lieux">Lieux</a></li>
+            <li><button id="dark-mode-toggle">Mode Sombre</button></li> <!-- Correction: Ajout de la balise de fermeture </li> -->
+            <!-- Ajout de la barre de recherche -->
+            <input type="text" id="search-input" placeholder="Rechercher un personnage ou un lieu">
         </ul>
     </nav>
+    <div>
+        <button id="sort-button">Trier par ordre alphabétique</button>
+        <select id="filter-select">
+            <option value="all">Tous les personnages</option>
+            <option value="principal">Personnages principaux</option>
+            <option value="secondaire">Personnages secondaires</option>
+        </select>
+    </div>
     <section id="personnages">
         <h2>Personnages</h2>
         <div class="personnage">
             <h3>Charlie</h3>
-            <p>Charlie est la princesse de l'Enfer et la fondatrice de l'Hôtel Hazbin. Elle a une personnalité optimiste et souhaite trouver une solution pacifique au problème de surpopulation de l'enfer. <a href="description_charlie.html">En savoir plus sur Charlie</a></p>
+            <p>Charlie est la princesse de l'Enfer et la fondatrice de l'Hôtel Hazbin. Elle a une personnalité optimiste et souhaite trouver une solution pacifique au problème de surpopulation de l'enfer.</p>
+            <div class="gallery">
+                <img src="charlie1.webp" alt="Charlie Image 1">
+                <img src="charlie2.webp" alt="Charlie Image 2">
+                <img src="charlie3.webp" alt="Charlie Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
         </div>
         <div class="personnage">
             <h3>Vaggie</h3>
             <p>Vaggie est la petite amie de Charlie et l'une des résidentes de l'Hôtel Hazbin. Elle a une personnalité forte et protectrice envers Charlie. <a href="description_vaggie.html">En savoir plus sur Vaggie</a></p>
+            <div class="gallery">
+                <img src="vaggie1.webp" alt="Vaggie Image 1">
+                <img src="vaggie2.webp" alt="Vaggie Image 2">
+                <img src="vaggie3.png" alt="Vaggie Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
         </div>
         <div class="personnage">
             <h3>Angel Dust</h3>
             <p>Angel Dust est un ancien trafiquant de drogue et un prostitué de l'Enfer. Il est un résident de l'Hôtel Hazbin et est connu pour son attitude exubérante et son sens de l'humour sarcastique. <a href="description_angel_dust.html">En savoir plus sur Angel Dust</a></p>
+            <div class="gallery">
+                <img src="angel1.webp" alt="Angel Dust Image 1">
+                <img src="angel2.webp" alt="Angel Dust Image 2">
+                <img src="angel3.png" alt="Angel Dust Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
         </div>
         <div class="personnage">
             <h3>Alastor</h3>
             <p>Alastor, également connu sous le nom de "Radio Demon", est un puissant démon et un résident mystérieux de l'Hôtel Hazbin. Il est charismatique mais aussi insondable et imprévisible. <a href="description_alastor.html">En savoir plus sur Alastor</a></p>
+            <div class="gallery">
+                <img src="alastor1.webp" alt="Alastor Image 1">
+                <img src="alastor2.webp" alt="Alastor Image 2">
+                <img src="alastor3.webp" alt="Alastor Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="personnage">
+            <h3>Sir Pentious</h3>
+            <p>Sir Pentious est un serpent démoniaque et un ancien rival d'Alastor. Il est connu pour son accent britannique distinctif et son ambition démesurée. <a href="description_sir_pentious.html">En savoir plus sur Sir Pentious</a></p>
+            <div class="gallery">
+                <img src="sir_pentious1.webp" alt="Sir Pentious Image 1">
+                <img src="sir_pentious2.webp" alt="Sir Pentious Image 2">
+                <img src="sir_pentious3.webp" alt="Sir Pentious Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+
+        <div class="personnage">
+            <h3>Niffty</h3>
+            <p>Niffty est une démonne obsessionnelle-compulsive qui est la femme de ménage de l'Hôtel Hazbin. Elle est connue pour son enthousiasme débordant et sa propreté obsessionnelle. <a href="description_niffty.html">En savoir plus sur Niffty</a></p>
+            <div class="gallery">
+                <img src="niffty1.webp" alt="Niffty Image 1">
+                <img src="niffty2.webp" alt="Niffty Image 2">
+                <img src="niffty3.webp" alt="Niffty Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+
+        <div class="personnage">
+            <h3>Husk</h3>
+            <p>Husk est un chat démoniaque et un ancien alcoolique. Il travaille en tant que barman à l'Hôtel Hazbin. Il est connu pour son attitude désinvolte et sa passion pour le jeu. <a href="description_husk.html">En savoir plus sur Husk</a></p>
+            <div class="gallery">
+                <img src="husk1.webp" alt="Husk Image 1">
+                <img src="husk2.webp" alt="Husk Image 2">
+                <img src="husk3.webp" alt="Husk Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+        
+        <div class="personnage">
+            <h3>Valentino</h3>
+            <p>Valentino est un puissant démon et un proxénète de l'Enfer. Il est l'un des antagonistes de la série. Valentino est connu pour sa cruauté et son arrogance. <a href="description_valentino.html">En savoir plus sur Valentino</a></p>
+            <div class="gallery">
+                <img src="valentino1.webp" alt="Valentino Image 1">
+                <img src="valentino2.webp" alt="Valentino Image 2">
+                <img src="valentino3.webp" alt="Valentino Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+        
+        <div class="personnage">
+            <h3>Velvet</h3>
+            <p>Velvet est une démonne à trois yeux et la réceptionniste de l'Hôtel Hazbin. Elle est connue pour sa nature calme et posée. <a href="description_velvet.html">En savoir plus sur Velvet</a></p>
+            <div class="gallery">
+                <img src="velvet1.webp" alt="Velvet Image 1">
+                <img src="velvet2.webp" alt="Velvet Image 2">
+                <img src="velvet3.webp" alt="Velvet Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+        
+        <div class="personnage">
+            <h3>Vox</h3>
+            <p>Vox est un démon télévisé et un entrepreneur médiatique de l'Enfer. Il est connu pour son obsession pour les émissions de télévision et sa capacité à influencer les masses. <a href="description_vox.html">En savoir plus sur Vox</a></p>
+            <div class="gallery">
+                <img src="vox1.webp" alt="Vox Image 1">
+                <img src="vox2.webp" alt="Vox Image 2">
+                <img src="vox3.webp" alt="Vox Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
+        </div>
+        
+        <div class="personnage">
+            <h3>Cherri Bomb</h3>
+            <p>Cherri Bomb est un démon tigre à dents de sabre et un ancien mercenaire. Il est connu pour sa personnalité explosive et son tempérament imprévisible. <a href="description_cherri_bomb.html">En savoir plus sur Cherri Bomb</a></p>
+            <div class="gallery">
+                <img src="cherri_bomb1.webp" alt="Cherri Bomb Image 1">
+                <img src="cherri_bomb2.webp" alt="Cherri Bomb Image 2">
+                <img src="cherri_bomb3.webp" alt="Cherri Bomb Image 3">
+            </div>
+            <button class="like-button">J'aime</button>
+            <span class="like-count">0</span>
         </div>
         <!-- Ajoutez autant de personnages que nécessaire -->
     </section>
+
+    <script>
+        document.querySelectorAll('.like-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const likeCount = this.nextElementSibling;
+                let count = parseInt(likeCount.textContent);
+                count++;
+                likeCount.textContent = count;
+            });
+        });
+    </script>
     
     
     <section id="lieux">
@@ -43,16 +176,337 @@
         <div class="lieu">
             <h3>Hôtel Hazbin</h3>
             <p>L'Hôtel Hazbin est un établissement situé en Enfer, fondé par Charlie dans le but de réhabiliter les âmes damnées. C'est le principal lieu de l'action dans la série.</p>
+            <img src="hotel.webp" alt="L'Hôtel Hazbin">
         </div>
         <div class="lieu">
-            <h3>Purgatoire</h3>
-            <p>Le Purgatoire est une zone intermédiaire entre l'Enfer et le Paradis. Dans Hazbin Hotel, certaines scènes se déroulent dans cette zone.</p>
+            <h3>Le Paradis</h3>
+            <p>Le Paradis est le lieu opposé à l'Enfer. C'est un royaume céleste où résident les âmes vertueuses et purifiées. Il est généralement représenté comme un endroit paisible et lumineux.</p>
+            <img src="paradis.webp" alt="Le Paradis">
         </div>
-        <!-- Ajoutez d'autres lieux selon vos besoins -->
+    </section>
+
+    <section id="produits-derives">
+        <h2>Produits dérivés</h2>
+        <div class="produit">
+            <img src="produit1.webp" alt="Produit 1">
+            <h3>Nom du produit 1</h3>
+            <p>Description du produit 1</p>
+            <button>Acheter</button>
+        </div>
+        <div class="produit">
+            <img src="produit2.webp" alt="Produit 2">
+            <h3>Nom du produit 2</h3>
+            <p>Description du produit 2</p>
+            <button>Acheter</button>
+        </div>
+        <!-- Ajoutez d'autres produits dérivés avec des images, des descriptions et des boutons d'achat -->
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz sur Hazbin Hotel</h2>
+        <button id="start-quiz">Commencer le quiz</button>
+        <div id="quiz-container"></div>
+    </section>
+    
+    <script>
+        // Questions et réponses pour le quiz
+        const questions = [
+            {
+                question: "Qui est la fondatrice de l'Hôtel Hazbin ?",
+                options: ["Vaggie", "Angel Dust", "Charlie", "Alastor"],
+                answer: "Charlie"
+            },
+            {
+                question: "Quel est le surnom d'Alastor ?",
+                options: ["Le Démon de la Radio", "Le Démon des Ombres", "Le Démon Écarlate", "Le Démon Rigolo"],
+                answer: "Le Démon de la Radio"
+            },
+            {
+                question: "Quel est le travail de Husk à l'Hôtel Hazbin ?",
+                options: ["Cuisinier", "Barman", "Réceptionniste", "Garde de sécurité"],
+                answer: "Barman"
+            },
+            {
+                question: "Quel est le nom de la démonne à un oeil qui travaille comme femme de ménage de l'Hôtel Hazbin ?",
+                options: ["Velvet", "Niffty", "Cherri Bomb", "Vox"],
+                answer: "Niffty"
+            },
+            {
+                question: "Quel est la forme de Sir Pentious ?",
+                options: ["Un Démon Serpent", "Un Démon Mille-pattes", "Un Démon Cheval", "Un Démon Guêpe"],
+                answer: "Un Démon Serpent"
+            }
+            // Ajoutez autant de questions que nécessaire
+        ];
+
+        // Variables pour suivre l'état du quiz
+        let currentQuestion = 0;
+        let score = 0;
+
+        // Fonction pour afficher la question actuelle
+        function displayQuestion() {
+            const quizContainer = document.getElementById('quiz-container');
+            const currentQuestionData = questions[currentQuestion];
+
+            quizContainer.innerHTML = `
+                <h3>${currentQuestionData.question}</h3>
+                <div class="options">
+                    ${currentQuestionData.options.map((option, index) => `
+                        <button class="option" data-index="${index}">${option}</button>
+                    `).join('')}
+                </div>
+            `;
+            
+            // Ajoutez un écouteur d'événement pour chaque option
+            document.querySelectorAll('.option').forEach(option => {
+                option.addEventListener('click', function() {
+                    const selectedOptionIndex = parseInt(this.dataset.index);
+                    if (selectedOptionIndex === questions[currentQuestion].options.indexOf(questions[currentQuestion].answer)) {
+                        score++;
+                    }
+                    currentQuestion++;
+                    if (currentQuestion < questions.length) {
+                        displayQuestion();
+                    } else {
+                        displayResult();
+                    }
+                });
+            });
+        }
+
+        // Fonction pour afficher le résultat du quiz
+        function displayResult() {
+            const quizContainer = document.getElementById('quiz-container');
+            quizContainer.innerHTML = `
+                <h3>Votre score est de ${score} sur ${questions.length}.</h3>
+                <button id="restart-quiz">Recommencer le quiz</button>
+            `;
+
+            // Ajoutez un écouteur d'événement pour recommencer le quiz
+            document.getElementById('restart-quiz').addEventListener('click', function() {
+                currentQuestion = 0;
+                score = 0;
+                displayQuestion();
+            });
+        }
+
+        // Ajoutez un écouteur d'événement pour commencer le quiz
+        document.getElementById('start-quiz').addEventListener('click', function() {
+            currentQuestion = 0;
+            score = 0;
+            displayQuestion();
+            // Cacher le bouton de démarrage après le lancement du quiz
+            this.style.display = 'none';
+        });
+    </script>
+
+
+    <section id="commentaires">
+        <h2>Commentaires</h2>
+        <div class="commentaire">
+            <!-- Commentaires de la première page -->
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Nom">
+                <textarea id="comment-content" placeholder="Ajouter un commentaire"></textarea>
+                <button type="submit">Poster</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="biographies">
+        <h2>Biographies des personnages</h2>
+        <div class="biographie">
+            <h3>Charlie</h3>
+            <p>Biographie de Charlie...</p>
+        </div>
+        <!-- Ajoutez les biographies pour les autres personnages -->
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <div class="question">
+            <h3>Quand est-ce que la prochaine saison sera diffusée ?</h3>
+            <p>Réponse à la question...</p>
+        </div>
+        <!-- Ajoutez d'autres questions et réponses -->
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contact-form">
+            <input type="text" id="contact-name" placeholder="Nom">
+            <input type="email" id="contact-email" placeholder="Email">
+            <textarea id="contact-message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <section id="reseaux-sociaux">
+        <h2>Suivez-nous sur les réseaux sociaux</h2>
+        <div class="reseaux-sociaux">
+            <a href="https://www.facebook.com/hazbinhotel" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com/hazbinhotel" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <!-- Ajoutez d'autres liens vers les réseaux sociaux -->
+        </div>
     </section>
     
     <footer>
         <p>&copy; 2024 Hazbin Hotel. Tous droits réservés.</p>
     </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Galerie d'images
+    document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', function() {
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+
+            const enlargedImg = document.createElement('img');
+            enlargedImg.src = this.src;
+            enlargedImg.classList.add('enlarged-img');
+
+            overlay.appendChild(enlargedImg);
+            document.body.appendChild(overlay);
+
+            overlay.addEventListener('click', function() {
+                document.body.removeChild(overlay);
+            });
+        });
+    });
+
+    // Mode sombre
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+
+    // Barre de recherche
+    const searchInput = document.getElementById('search-input');
+    const personnages = document.querySelectorAll('.personnage h3');
+    const lieux = document.querySelectorAll('.lieu h3');
+
+    searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        personnages.forEach(personnage => {
+            const personnageName = personnage.textContent.toLowerCase();
+            if (personnageName.includes(searchTerm)) {
+                personnage.parentNode.style.display = 'block';
+            } else {
+                personnage.parentNode.style.display = 'none';
+            }
+        });
+
+        lieux.forEach(lieu => {
+            const lieuName = lieu.textContent.toLowerCase();
+            if (lieuName.includes(searchTerm)) {
+                lieu.parentNode.style.display = 'block';
+            } else {
+                lieu.parentNode.style.display = 'none';
+            }
+        });
+    });
+
+    // Tri des personnages
+    const sortButton = document.getElementById('sort-button');
+    sortButton.addEventListener('click', function() {
+        const personnagesContainer = document.getElementById('personnages');
+        const personnagesList = Array.from(document.querySelectorAll('.personnage'));
+
+        personnagesList.sort((a, b) => {
+            const aName = a.querySelector('h3').textContent.toLowerCase();
+            const bName = b.querySelector('h3').textContent.toLowerCase();
+            return aName.localeCompare(bName);
+        });
+
+        personnagesList.forEach(personnage => personnagesContainer.appendChild(personnage));
+    });
+
+    // Filtrage des personnages
+    const filterSelect = document.getElementById('filter-select');
+    filterSelect.addEventListener('change', function() {
+        const filterValue = filterSelect.value;
+        const personnages = document.querySelectorAll('.personnage');
+
+        personnages.forEach(personnage => {
+            const isPrincipal = personnage.classList.contains('principal');
+            const isSecondaire = personnage.classList.contains('secondaire');
+
+            if (filterValue === 'all') {
+                personnage.style.display = 'block';
+            } else if (filterValue === 'principal' && isPrincipal) {
+                personnage.style.display = 'block';
+            } else if (filterValue === 'secondaire' && isSecondaire) {
+                personnage.style.display = 'block';
+            } else {
+                personnage.style.display = 'none';
+            }
+        });
+    });
+
+    // Pagination des commentaires
+    const previousPageCommentButton = document.querySelector('.previous-page-comment');
+    const nextPageCommentButton = document.querySelector('.next-page-comment');
+    const commentsPerPage = 5; // Nombre de commentaires par page
+    let currentPageComment = 1; // Page actuelle pour les commentaires
+
+    function displayComments(page) {
+        const commentaires = document.querySelectorAll('.commentaire');
+        const startIndex = (page - 1) * commentsPerPage;
+        const endIndex = page * commentsPerPage;
+
+        commentaires.forEach((commentaire, index) => {
+            if (index >= startIndex && index < endIndex) {
+                commentaire.style.display = 'block';
+            } else {
+                commentaire.style.display = 'none';
+            }
+        });
+    }
+
+    previousPageCommentButton.addEventListener('click', function() {
+        if (currentPageComment > 1) {
+            currentPageComment--;
+            displayComments(currentPageComment);
+        }
+    });
+
+    nextPageCommentButton.addEventListener('click', function() {
+        const commentaires = document.querySelectorAll('.commentaire');
+        const totalPagesComment = Math.ceil(commentaires.length / commentsPerPage);
+
+        if (currentPageComment < totalPagesComment) {
+            currentPageComment++;
+            displayComments(currentPageComment);
+        }
+    });
+
+    // Formulaire de contact
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const contactName = document.getElementById('contact-name').value;
+        const contactEmail = document.getElementById('contact-email').value;
+        const contactMessage = document.getElementById('contact-message').value;
+
+        if (contactName && contactEmail && contactMessage) {
+            // Envoyer les données du formulaire à un serveur ou effectuer une action appropriée
+            console.log("Nom:", contactName);
+            console.log("Email:", contactEmail);
+            console.log("Message:", contactMessage);
+
+            // Effacer le formulaire après l'envoi
+            document.getElementById('contact-name').value = '';
+            document.getElementById('contact-email').value = '';
+            document.getElementById('contact-message').value = '';
+        }
+    });
+});
+
+
+</script>
 </body>
 </html>
